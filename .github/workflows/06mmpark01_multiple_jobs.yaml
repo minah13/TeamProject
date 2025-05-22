@@ -50,7 +50,7 @@ jobs:
 
         - name: run springboot application
           run: |
-            java -jar ./application.jar & || exit 1
+            java -jar ./application.jar &
             sleep 30 # stand by 30 sec 
         
    test:
