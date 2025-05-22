@@ -26,14 +26,14 @@ jobs:
         
         
         - name: run automated test #1
-          run:
+          run: |
             curl http://localhost:8080 || exit 1
 
         
         - name: run automated test #2
-          run:
+          run: |
             curl http://localhost:8080/images || exit 1
 
         - name: run automated test #3
-          run:
+          run: |
             curl http://localhost:8080/animal || exit 1
