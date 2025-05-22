@@ -10,8 +10,13 @@ public class IndexController {
 
     @GetMapping("/")
     public @ResponseBody String index() {
-        return "HELLO WORLD !";
+        return "HELLO VSCODE REMOTE MODE !";
     }
     
+
+    @GetMapping("/fire")
+    public String fire(){
+        return "views/fire";
+    }
 
 }
