@@ -44,8 +44,10 @@ jobs:
           uses: actions/download-artifact@v4
           with:
             name: application.jar
+
         - name: check downloaded files
           run: ls -al
+
         - name: run springboot application
           run: |
             java -jar ./application.jar & || exit 1
@@ -59,7 +61,6 @@ jobs:
         - name: run automated test #1
           run: |
             curl http://localhost:8080 || exit 1
-
         
         - name: run automated test #2
           run: |
