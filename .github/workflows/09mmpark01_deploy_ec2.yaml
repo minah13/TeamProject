@@ -73,7 +73,8 @@ jobs:
           run: |
             rm -f ~/.ssh/ec2_key
 
-   run_test_ec2:
+
+    run_test_ec2:
       needs: deploy_ec2
       name: RUN and Test on EC2
       runs-on: ubuntu-22.04
