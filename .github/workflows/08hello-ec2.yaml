@@ -47,7 +47,7 @@ jobs:
         run: |
           echo "Hello, EC2 SCP" > README.md
           scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null \
-          -i ~/.ssh/ec2_key -P 22 README.md \
+          -i ~/.ssh/ec2_key -P 12137 README.md \
           ${{ env.EC2_USERNAME }}@${{ env.EC2_HOSTNAME }}:~/
 
     
